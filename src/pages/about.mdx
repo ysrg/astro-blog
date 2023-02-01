@@ -1,0 +1,12 @@
+---
+title: 'About'
+description: 'A few things about us.'
+---
+import DefaultPageLayout from '$/layouts/default.astro'
+import Prose from '$/components/Prose.astro'
+
+<DefaultPageLayout content={{ title: frontmatter.title, description: frontmatter.description }}>
+    <Prose>
+            We’re a software development company that puts people at the heart. Of course, we’re obsessed with cutting-edge technology but it’s how much we care about people that sets us apart. Whether that’s looking after our clients, our staff or the next generation of tech talent, we know that exceptional software development is only possible with exceptional teamwork.
+    </Prose>
+</DefaultPageLayout>
