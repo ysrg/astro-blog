@@ -5,6 +5,7 @@ const config = require('./tailwind.theme.config')
  */
 const themeConfig = process.env.THEME_KEY && config[process.env.THEME_KEY] ? config[process.env.THEME_KEY] : config.default
 const { colors } = themeConfig
+
 module.exports = {
     darkMode: 'class',
     content: [
@@ -14,7 +15,7 @@ module.exports = {
     safelist: ['dark'],
     theme: {
 		fontFamily: {
-			sans: ['Fira Code', ...fontFamily.sans],
+			sans: [...fontFamily.sans],
 		},
 		extend: {
             colors: {
